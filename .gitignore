@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS-generated metadata and temporary files
+*:Zone.Identifier
+.DS_Store
+Thumbs.db
+
+# Generated console output
+logs/*.out
