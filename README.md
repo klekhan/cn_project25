@@ -20,15 +20,6 @@ on the switch.
 | `plot_results.py` | Makes `results.png` (connection rate + block markers) from the logs |
 | `logs/` | Created by the controller: `events.csv` (alerts), `syn_events.csv`, `flow_stats.csv` |
 
-## Verification status (be honest in your report)
-
-The controller was tested **without Mininet** by (a) a simulated switch with a fake clock
-(normal traffic, port scan, fast flood, slow flood, half-open flow stats, whitelist, recovery
-all behaved as designed) and (b) a fake OpenFlow 1.3 switch connected over TCP to the real
-running controller (handshake, table-miss, forwarding flows, drop flow with correct match,
-priority, 60 s timeout and no actions, stats polling). Mininet/nmap/hping3 themselves have not
-been run in that test, so do the first real run early and tune thresholds if needed.
-
 ## Install (once)
 
 ```bash
